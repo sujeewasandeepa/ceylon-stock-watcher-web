@@ -2,6 +2,7 @@
 // Fetches from /api/health endpoint and displays the status or loading/error state
 
 import { useEffect, useState } from 'react'
+import './Health.css'
 
 function Health() {
   const [status, setStatus] = useState(null)
@@ -23,7 +24,7 @@ function Health() {
     fetchHealth()
   }, [])
 
-  if (loading) return <div>Loading...</div>
+  if (loading) return <div className="spinner"></div>
   return <div>Health: {status}</div>
 }
 
