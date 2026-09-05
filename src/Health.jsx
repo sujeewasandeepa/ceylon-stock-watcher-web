@@ -1,3 +1,6 @@
+// Health component - displays API health status
+// Fetches from /api/health endpoint and displays the status or loading/error state
+
 import { useEffect, useState } from 'react'
 
 function Health() {
